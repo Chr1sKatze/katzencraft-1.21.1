@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "katzencraft",
+	"version": "${version}",
+	"name": "Katzencraft Mod",
+	"description": "This is the Katzencraft mod",
+	"authors": [
+		"Chriskatze"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/katzencraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.chriskatze.katzencraft.KatzencraftMod"
+		],
+		"fabric-datagen": [
+			"net.chriskatze.katzencraft.KatzencraftModDataGenerator"
+		],
+		"client": [
+			"net.chriskatze.katzencraft.KatzencraftModClient"
+		]
+	},
+	"mixins": [
+		"katzencraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
