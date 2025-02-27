@@ -1,0 +1,11 @@
+{
+  "item.katzencraft.adamantium_raw": "Raw Adamantium",
+  "item.katzencraft.adamantium_nugget": "Adamantium Nugget",
+  "item.katzencraft.adamantium_ingot": "Adamantium Ingot",
+
+  "block.katzencraft.adamantium_block": "Adamantium Block",
+  "block.katzencraft.adamantium_ore": "Adamantium Ore",
+  "block.katzencraft.adamantium_ore_deepslate": "Adamantium Deepslate Ore",
+  "block.katzencraft.adamantium_ore_nether": "Adamantium Nether Ore",
+  "block.katzencraft.adamantium_ore_end": "Adamantium End Ore"
+}
