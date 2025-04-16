@@ -19,6 +19,22 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .strength(4f).requiresTool()));
 
+    public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f).requiresTool()));
+
+    public static final Block MANDERVILLIUM_BLOCK = registerBlock("mandervillium_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f).requiresTool()));
+
+    public static final Block PLATINUM_BLOCK = registerBlock("platinum_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f).requiresTool()));
+
+    public static final Block SILVER_BLOCK = registerBlock("silver_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f).requiresTool()));
+
     // ORES ------------------------------------------------------------------------------------------------------------
     public static final Block ADAMANTIUM_ORE = registerBlock("adamantium_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.STONE)
@@ -30,6 +46,58 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.NETHERRACK)
                     .strength(4f).requiresTool()));
     public static final Block ADAMANTIUM_ORE_END = registerBlock("adamantium_ore_end",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.END_STONE)
+                    .strength(4f).requiresTool()));
+
+    public static final Block MYTHRIL_ORE = registerBlock("mythril_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.STONE)
+                    .strength(4f).requiresTool()));
+    public static final Block MYTHRIL_ORE_DEEPSLATE = registerBlock("mythril_ore_deepslate",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6), AbstractBlock.Settings.copy(Blocks.DEEPSLATE)
+                    .strength(4f).requiresTool()));
+    public static final Block MYTHRIL_ORE_NETHER = registerBlock("mythril_ore_nether",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.NETHERRACK)
+                    .strength(4f).requiresTool()));
+    public static final Block MYTHRIL_ORE_END = registerBlock("mythril_ore_end",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.END_STONE)
+                    .strength(4f).requiresTool()));
+
+    public static final Block MANDERVILLIUM_ORE = registerBlock("mandervillium_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.STONE)
+                    .strength(4f).requiresTool()));
+    public static final Block MANDERVILLIUM_ORE_DEEPSLATE = registerBlock("mandervillium_ore_deepslate",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6), AbstractBlock.Settings.copy(Blocks.DEEPSLATE)
+                    .strength(4f).requiresTool()));
+    public static final Block MANDERVILLIUM_ORE_NETHER = registerBlock("mandervillium_ore_nether",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.NETHERRACK)
+                    .strength(4f).requiresTool()));
+    public static final Block MANDERVILLIUM_ORE_END = registerBlock("mandervillium_ore_end",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.END_STONE)
+                    .strength(4f).requiresTool()));
+
+    public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.STONE)
+                    .strength(4f).requiresTool()));
+    public static final Block PLATINUM_ORE_DEEPSLATE = registerBlock("platinum_ore_deepslate",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6), AbstractBlock.Settings.copy(Blocks.DEEPSLATE)
+                    .strength(4f).requiresTool()));
+    public static final Block PLATINUM_ORE_NETHER = registerBlock("platinum_ore_nether",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.NETHERRACK)
+                    .strength(4f).requiresTool()));
+    public static final Block PLATINUM_ORE_END = registerBlock("platinum_ore_end",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.END_STONE)
+                    .strength(4f).requiresTool()));
+
+    public static final Block SILVER_ORE = registerBlock("silver_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.STONE)
+                    .strength(4f).requiresTool()));
+    public static final Block SILVER_ORE_DEEPSLATE = registerBlock("silver_ore_deepslate",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6), AbstractBlock.Settings.copy(Blocks.DEEPSLATE)
+                    .strength(4f).requiresTool()));
+    public static final Block SILVER_ORE_NETHER = registerBlock("silver_ore_nether",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.NETHERRACK)
+                    .strength(4f).requiresTool()));
+    public static final Block SILVER_ORE_END = registerBlock("silver_ore_end",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 4), AbstractBlock.Settings.copy(Blocks.END_STONE)
                     .strength(4f).requiresTool()));
 

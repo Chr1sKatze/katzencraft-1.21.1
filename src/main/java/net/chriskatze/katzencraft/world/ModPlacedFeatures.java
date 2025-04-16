@@ -22,6 +22,22 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> ADAMANTIUM_ORE_NETHER_PLACED_KEY = registerKey("adamantium_ore_nether_placed");
     public static final RegistryKey<PlacedFeature> ADAMANTIUM_ORE_END_PLACED_KEY = registerKey("adamantium_ore_end_placed");
 
+    public static final RegistryKey<PlacedFeature> MYTHRIL_ORE_PLACED_KEY = registerKey("mythril_ore_placed");
+    public static final RegistryKey<PlacedFeature> MYTHRIL_ORE_NETHER_PLACED_KEY = registerKey("mythril_ore_nether_placed");
+    public static final RegistryKey<PlacedFeature> MYTHRIL_ORE_END_PLACED_KEY = registerKey("mythril_ore_end_placed");
+
+    public static final RegistryKey<PlacedFeature> MANDERVILLIUM_ORE_PLACED_KEY = registerKey("mandervillium_ore_placed");
+    public static final RegistryKey<PlacedFeature> MANDERVILLIUM_ORE_NETHER_PLACED_KEY = registerKey("mandervillium_ore_nether_placed");
+    public static final RegistryKey<PlacedFeature> MANDERVILLIUM_ORE_END_PLACED_KEY = registerKey("mandervillium_ore_end_placed");
+
+    public static final RegistryKey<PlacedFeature> PLATINUM_ORE_PLACED_KEY = registerKey("platinum_ore_placed");
+    public static final RegistryKey<PlacedFeature> PLATINUM_ORE_NETHER_PLACED_KEY = registerKey("platinum_ore_nether_placed");
+    public static final RegistryKey<PlacedFeature> PLATINUM_ORE_END_PLACED_KEY = registerKey("platinum_ore_end_placed");
+
+    public static final RegistryKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
+    public static final RegistryKey<PlacedFeature> SILVER_ORE_NETHER_PLACED_KEY = registerKey("silver_ore_nether_placed");
+    public static final RegistryKey<PlacedFeature> SILVER_ORE_END_PLACED_KEY = registerKey("silver_ore_end_placed");
+
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
@@ -32,6 +48,46 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(10,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
         register(context, ADAMANTIUM_ORE_END_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ADAMANTIUM_ORE_END_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, MYTHRIL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MYTHRIL_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14, // veins per chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, MYTHRIL_ORE_NETHER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MYTHRIL_ORE_NETHER_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, MYTHRIL_ORE_END_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MYTHRIL_ORE_END_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, MANDERVILLIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MANDERVILLIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14, // veins per chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, MANDERVILLIUM_ORE_NETHER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MANDERVILLIUM_ORE_NETHER_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, MANDERVILLIUM_ORE_END_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MANDERVILLIUM_ORE_END_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14, // veins per chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, PLATINUM_ORE_NETHER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_NETHER_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, PLATINUM_ORE_END_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_END_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, SILVER_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SILVER_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14, // veins per chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, SILVER_ORE_NETHER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SILVER_ORE_NETHER_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, SILVER_ORE_END_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SILVER_ORE_END_KEY),
                 ModOrePlacement.modifiersWithCount(10,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
     }
